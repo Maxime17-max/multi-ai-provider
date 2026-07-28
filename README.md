@@ -58,9 +58,9 @@ Invoke any of the 3 built-in skills:
 
 | Skill | Command | Description |
 |-------|---------|-------------|
-| ai-chat | `/multi-ai:chat` | Chat with current provider |
-| ai-switch | `/multi-ai:switch` | Change provider/model |
-| ai-list | `/multi-ai:list` | List providers and models |
+| ai-chat | `/multi-ai-provider:ai-chat` | Chat with current provider |
+| ai-switch | `/multi-ai-provider:ai-switch` | Change provider/model |
+| ai-list | `/multi-ai-provider:ai-list` | List providers and models |
 
 ## Available Tools
 

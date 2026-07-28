@@ -3,8 +3,8 @@ name: ai-list
 description: List configured AI providers and their available models
 ---
 
-Use the `ai_provider_list` and `ai_model_list` tools.
+When the user wants to see providers or models, follow these steps:
 
-1. Call `ai_provider_list` to show providers and their status
-2. For each configured provider, call `ai_model_list` with that provider name
-3. Format and present the results to the user
+1. Call `ai_provider_list` to show all configured providers and their status.
+2. For each configured provider (where `configured` is true), call `ai_model_list provider="<name>"` to get its models.
+3. Format and present the results to the user in a readable way, showing provider name, status, and available models with their capabilities.
