@@ -2,7 +2,10 @@
   "name": "multi-ai-provider",
   "version": "0.1.0",
   "description": "Multi-provider AI gateway for Claude Code — route requests to OpenAI, Anthropic, Gemini, OpenRouter, Ollama, LM Studio and more",
-  "author": "Community",
+  "author": {
+    "name": "Community",
+    "email": "community@example.com"
+  },
   "license": "MIT",
   "mcpServers": {
     "ai-gateway": {
