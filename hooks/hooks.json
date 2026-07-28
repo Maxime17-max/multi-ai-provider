@@ -1,0 +1,13 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "mcp__plugin_multi-ai-provider_ai-gateway__ai_chat",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "echo \"[AI-GATEWAY] Chat completed at $(date -u +%Y-%m-%dT%H:%M:%SZ)\" >> /tmp/ai-gateway-hooks.log"
+        }
+      ]
+    }
+  ]
+}

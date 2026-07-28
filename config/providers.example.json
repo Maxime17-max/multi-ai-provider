@@ -1,0 +1,32 @@
+{
+  "providers": {
+    "openai": {
+      "apiKey": "sk-...",
+      "baseUrl": "https://api.openai.com/v1"
+    },
+    "anthropic": {
+      "apiKey": "sk-ant-...",
+      "baseUrl": "https://api.anthropic.com"
+    },
+    "gemini": {
+      "apiKey": "AIza..."
+    },
+    "openrouter": {
+      "apiKey": "sk-or-...",
+      "baseUrl": "https://openrouter.ai/api/v1"
+    },
+    "ollama": {
+      "baseUrl": "http://localhost:11434"
+    },
+    "lm-studio": {
+      "baseUrl": "http://localhost:1234/v1"
+    }
+  },
+  "activeProvider": "openai",
+  "activeModel": "gpt-4o",
+  "fallback": {
+    "enabled": true,
+    "strategy": "sequential",
+    "order": ["openai", "anthropic", "openrouter"]
+  }
+}
