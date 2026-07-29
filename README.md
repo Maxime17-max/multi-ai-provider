@@ -15,15 +15,25 @@ A plugin that adds multi-provider AI integration to Claude Code via the official
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/Maxime17-max/multi-ai-provider.git ~/.claude/plugins/multi-ai-provider
+### Première installation
 
-# Install MCP server dependencies
+```bash
+git clone https://github.com/Maxime17-max/multi-ai-provider.git ~/.claude/plugins/multi-ai-provider
 cd ~/.claude/plugins/multi-ai-provider/servers/ai-gateway
 npm install
+```
 
-# Start Claude Code with the plugin
+### Mise à jour
+
+```bash
+cd ~/.claude/plugins/multi-ai-provider
+git pull
+cd servers/ai-gateway && npm install && cd ../..
+```
+
+### Lancement
+
+```bash
 claude --plugin-dir ~/.claude/plugins/multi-ai-provider
 ```
 
